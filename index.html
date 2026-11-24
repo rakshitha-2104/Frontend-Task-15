@@ -4,27 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopCart | Shopping Store</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Navbar -->
     <header class="navbar">
         <div class="logo">
             <span class="logo-icon">✦</span>
             ShopCart
         </div>
-
-        <nav>
+         <nav>
             <a href="#home">Home</a>
             <a href="#products">Shop</a>
             <a href="#categories">Categories</a>
         </nav>
-
         <div class="nav-actions">
             <button class="cart-button" id="cartToggle">
                  Cart
@@ -32,8 +26,6 @@
             </button>
         </div>
     </header>
-
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <span class="hero-tag">YOUR EVERYDAY SHOPPING DESTINATION</span>
@@ -55,8 +47,6 @@
                  alt="Shopping sneaker">
         </div>
     </section>
-
-    <!-- Categories -->
     <section class="categories-section" id="categories">
         <div class="section-heading">
             <div>
@@ -64,8 +54,7 @@
                 <h2>Shop by category</h2>
             </div>
         </div>
-
-        <div class="categories">
+         <div class="categories">
             <button class="category-btn active" data-category="All"> All Products</button>
             <button class="category-btn" data-category="Fashion">👕 Fashion</button>
             <button class="category-btn" data-category="Electronics">📱 Electronics</button>
@@ -74,11 +63,8 @@
             <button class="category-btn" data-category="Lifestyle">🏠 Lifestyle</button>
         </div>
     </section>
-
-    <!-- Products -->
     <main class="products-section" id="products">
-
-        <div class="section-heading product-heading">
+         <div class="section-heading product-heading">
             <div>
                 <span class="small-label">OUR COLLECTION</span>
                 <h2>Popular products</h2>
@@ -86,41 +72,30 @@
                     Find your favorite products at amazing prices.
                 </p>
             </div>
-
-            <div class="search-box">
+                <div class="search-box">
                 <span>🔍</span>
                 <input type="text" id="searchInput" placeholder="Search products...">
             </div>
         </div>
-
         <div class="products-grid" id="productsGrid">
         </div>
-
         <div id="emptyProducts" class="empty-message hidden">
             <div>🔎</div>
             <h3>No products found</h3>
             <p>Try searching for something else.</p>
         </div>
-
     </main>
-
-    <!-- Cart Sidebar -->
     <div class="cart-overlay" id="cartOverlay"></div>
-
     <aside class="cart-sidebar" id="cartSidebar">
-
-        <div class="cart-header">
+            <div class="cart-header">
             <div>
                 <h2>Your Cart </h2>
                 <p id="cartItemsText">0 items</p>
             </div>
-
-            <button class="close-cart" id="closeCart">✕</button>
+                <button class="close-cart" id="closeCart">✕</button>
         </div>
-
         <div class="cart-items" id="cartItems">
         </div>
-
         <div class="cart-empty" id="cartEmpty">
             <div class="empty-icon">🛍️</div>
             <h3>Your cart is empty</h3>
@@ -129,42 +104,31 @@
                 Continue Shopping
             </button>
         </div>
-
         <div class="cart-footer" id="cartFooter">
-
-            <div class="cart-summary">
+                <div class="cart-summary">
                 <div class="summary-row">
                     <span>Subtotal</span>
                     <span id="subtotal">₹0</span>
                 </div>
-
-                <div class="summary-row">
+                    <div class="summary-row">
                     <span>Delivery</span>
                     <span class="free-delivery">FREE</span>
                 </div>
-
                 <div class="summary-row total-row">
                     <span>Total</span>
                     <span id="cartTotal">₹0</span>
                 </div>
             </div>
-
             <button class="checkout-button" id="checkoutButton">
                 Proceed to Checkout →
             </button>
-
             <p class="checkout-note">Enjoy free delivery on every order</p>
         </div>
-
     </aside>
-
-    <!-- Toast Notification -->
     <div class="toast" id="toast">
         <span>✓</span>
         <p id="toastMessage">Product added to cart</p>
     </div>
-
-    <script src="script.js"></script>
-
+      <script src="script.js"></script>
 </body>
 </html>
